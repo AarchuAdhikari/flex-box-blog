@@ -113,7 +113,6 @@ article {
 .card-list,
 .card-list > div {
   display: flex;
-  justify-content: space-between;
   margin-top: 2rem;
   flex-direction: row;
 }
@@ -143,7 +142,13 @@ article {
   text-align: center;
   margin-top: 32px;
 }
-
+input {
+  padding: 10px;
+}
+.submit {
+  background-color: aquamarine;
+  font-weight: bolder;
+}
 /* media query */
 @media (max-width: 992px) {
   .card-list {
@@ -164,10 +169,15 @@ article {
   }
   article {
     display: flex;
+    border: 1px solid white;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
     flex-direction: column;
   }
   .art-img {
     width: 300px;
+    margin-right: 0;
   }
   .side-links {
     width: 100%;
